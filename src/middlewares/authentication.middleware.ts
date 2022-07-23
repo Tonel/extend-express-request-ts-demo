@@ -34,7 +34,7 @@ export function handleTokenBasedAuthentication(req: Request, res: Response, next
             // retrieving the user associated with the authenticationToken value
             const user = users.find((u) => u.authenticationToken === authenticationToken)
 
-            req.user = user // ERROR: Property 'user' does not exist on type 'Request'
+            req.user = user
 
             // moving to the next middleware
             return next()

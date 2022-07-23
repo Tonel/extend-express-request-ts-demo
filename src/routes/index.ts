@@ -1,7 +1,7 @@
 import { Router } from "express"
 import { HelloWorldController } from "../controllers/helloWorld"
-import { handleLanguageHeader } from "../middleware/customHeaders.middleware"
-import { handleTokenBasedAuthentication } from "../middleware/authentication.middleware"
+import { handleLanguageHeader } from "../middlewares/headers"
+import { handleTokenBasedAuthentication } from "../middlewares/authentication.middleware"
 
 export const router = Router()
 
